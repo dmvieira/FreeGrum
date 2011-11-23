@@ -10,7 +10,8 @@ The Grumbach Method is a good way for planning your enterprise strategies.
 Installation
 ##############################
 
-The code now is using Perl 5.12 and vi editor, but everything can be changed. Linux distributions come with this softwares outofbox.
+-The code now is using Perl 5.12 and vi editor, but everything can be changed. Linux distributions come with this softwares outofbox.
+-Need create folders 'sistema','diagnostico' and 'visao' to work.
 
 ##############################
 To Do
