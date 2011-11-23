@@ -12,6 +12,8 @@ say "Escolha o que deseja fazer em $trabalho:\n";
 say "0 : Sair";
 say "1 : Identificacao do Sistema";
 say "2 : Diagnostico Estrategico";
+say "3 : Visao Estrategica";
+
 
 my $escolha = <>;
 system("clear");
@@ -19,6 +21,7 @@ if (isint($escolha)){
 	if($escolha == 0) { print "Obrigado por ter usado FreeGrum!"; exit 0;}
 	elsif($escolha == 1) { Interface::mostra_identsys($trabalho); }
 	elsif($escolha == 2) { Interface::mostra_diagestrateg($trabalho); }
+	elsif($escolha == 3) { Interface::mostra_visestrateg($trabalho); }
 
 	else { Interface::mostra_principal($trabalho);}
 
@@ -82,6 +85,32 @@ if (isint($escolha)){
 }
 else{
 	Interface::mostra_diagestrateg($trabalho);	
+}
+}
+
+sub mostra_visestrateg {
+my $trabalho = shift;
+
+say "Visao Estrategica de $trabalho:\n";
+say "0 : Menu Principal";
+say "1 : Brainstorming";
+say "2 : Eventos Futuros";
+say "3 : Peritos";
+say "4 : Cenarios";
+my $escolha = <>;
+system("clear");
+if (isint($escolha)){
+	if($escolha == 0){ Interface::mostra_principal($trabalho);}
+	elsif($escolha == 1){ Interface::mostra_pergunta('Brainstorming','Interface::mostra_visestrateg($trabalho)','visao', $trabalho); }
+	elsif($escolha == 2){ Interface::mostra_pergunta('Eventos-Futuros','Interface::mostra_visestrateg($trabalho)','visao', $trabalho); }
+	elsif($escolha == 3){ Interface::mostra_pergunta('Peritos','Interface::mostra_visestrateg($trabalho)','visao', $trabalho); }
+	elsif($escolha == 4){ Interface::mostra_pergunta('Cenarios','Interface::mostra_visestrateg($trabalho)','visao', $trabalho); }
+
+	else { Interface::mostra_visestrateg($trabalho)}
+
+}
+else{
+	Interface::mostra_visestrateg($trabalho);	
 }
 }
 
