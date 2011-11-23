@@ -1,0 +1,28 @@
+##############################
+ABOUT
+##############################
+
+This project is an OpenSource substitute for Puma and Lince software.
+This software was made for generate scenarios with some events that can occurs when you are planning some strategies.
+The Grumbach Method is a good way for planning your enterprise strategies.
+
+##############################
+Installation
+##############################
+
+The code now is using Perl 5.12 and vi editor, but everything can be changed. Linux distributions come with this softwares outofbox.
+
+##############################
+To Do
+##############################
+
+- I'm thinking about organizing with SQLite instead of folders like it's now
+- Implement other Grumbach Method phases
+- Use graphical interface?
+
+##############################
+OTHER THINGS
+##############################
+
+- I'm Brazillian and have a lot of things of Grumbach Method to help the implement
+- email diogo.mvieira@gmail.com for everything you need.
